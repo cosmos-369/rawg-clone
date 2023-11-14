@@ -6,7 +6,6 @@ useGames;
 
 const GamesGrid = () => {
   const { games, error } = useGames();
-  console.log(games);
 
   return (
     <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing="10px">
