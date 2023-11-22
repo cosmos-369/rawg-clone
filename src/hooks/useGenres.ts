@@ -1,5 +1,4 @@
-import { useState } from "react";
-import useData from "./useData";
+import data from "../assets/data/genres"
 
 export interface Genre {
     id: number;
@@ -8,9 +7,10 @@ export interface Genre {
     image_background : string;
 }
 
-useState
+
 const useGenres = () => {
-  return useData<Genre>("/genres")
+  return {data : data, error : null, isLoading : false};
 }
+
 
 export default useGenres
