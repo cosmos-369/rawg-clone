@@ -29,7 +29,7 @@ const PlatformsList = ({ platforms }: Props) => {
     nintendo: SiNintendo,
   };
   return (
-    <HStack padding={2}>
+    <HStack paddingY={2}>
       {platforms.map((platform) => (
         <Icon
           key={platform.id}
